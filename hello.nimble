@@ -7,8 +7,8 @@ srcDir        = "src"
 
 bin = @["hello"]
 
-task build, "Compila o projeto":
+task build, "compilar":
   exec "nim cpp -d:release src/hello.nim"
 
-task run, "Compila e executa":
-  exec "nim cpp --spellSuggest -r src/hello.nim"
+task run, "compilar e executar":
+  exec "nim cpp -r src/hello.nim"
